@@ -1,0 +1,225 @@
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* end global rules */
+
+/* start header */
+header {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+header nav li {
+  padding: 10px;
+}
+header nav li a {
+  display: block;
+  color: var(--dark-Grayish-blue, --grayish-blue);
+  transition: 0.3s;
+}
+header nav li a:hover {
+  color: var(--Soft-red);
+}
+/* end header */
+/* start section */
+section .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 25px;
+  height: 600px;
+}
+
+section .container .section-img {
+  background-image: url(../assets/images/image-web-3-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  grid-area: 1/1/4/5;
+}
+
+section .container .section-heading {
+  grid-area: 4/1/6/3;
+  font-size: 55px;
+  color: var(--Very-dark-blue);
+  font-weight: 900;
+  margin-top: 20px;
+}
+section .container .para-btn {
+  grid-area: 4/3/7/5;
+  margin-top: 20px;
+}
+.container .para-btn p {
+  color: var(--Dark-grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.container .para-btn button {
+  color: var(--Off-white);
+  background-color: var(--Soft-red);
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  padding: 15px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.para-btn button:hover {
+  color: white;
+  background-color: var(--Very-dark-blue);
+}
+
+.container .right-side {
+  grid-area: 1/5/6/7;
+  background-color: var(--Very-dark-blue);
+  padding: 25px;
+}
+.container .right-side h1 {
+  color: var(--Soft-orange);
+  font-weight: 600;
+}
+
+.container .right-side .side-one h2 a {
+  display: block;
+  color: var(--Off-white);
+  font-weight: 600;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+.container .right-side .side-one h2:hover a {
+  color: var(--Soft-orange);
+}
+.container .right-side .side-one p {
+  color: var(--Dark-grayish-blue);
+  font-weight: 600;
+  font-size: 18px;
+}
+hr {
+  background-color: var(--Dark-grayish-blue);
+  border: 0;
+  height: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* end section */
+
+/* start features */
+.features {
+  margin-top: 45px;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+.feat {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.feat .intro {
+  margin-left: 20px;
+}
+
+.feat .intro h2 {
+  color: var(--Grayish-blue);
+  font-weight: 900;
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+
+.feat .intro h3 a {
+  display: block;
+  color: var(--Very-dark-blue);
+  font-weight: 900;
+  padding-bottom: 15px;
+  transition: 0.3s;
+}
+.feat .intro h3 a:hover {
+    color: var(--Soft-red);
+}
+.feat .intro p {
+  color: var(--Grayish-blue);
+  font-weight: 600;
+    font-size: 13px;
+    line-height: 1.5;
+}
+/* End features */
