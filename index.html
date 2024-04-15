@@ -29,13 +29,16 @@
   <body>
     <header>
       <div class="container">
-        <div class="log">
+        <div class="logo">
           <a href="#">
             <img src="assets/images/logo.svg" alt="logo not found"
           /></a>
         </div>
+        <button class="mobile-nav-toggle">
+          <span class="sr-only">menu</span>
+        </button>
         <nav>
-          <ul>
+          <ul class="primary-navigation">
             <li><a href="#"> Home</a></li>
             <li><a href="#"> New</a></li>
             <li><a href="#"> Popular</a></li>
@@ -48,20 +51,22 @@
     <section>
       <div class="container">
         <div class="section-img"></div>
-        <h1 class="section-heading">
-          The Bright<br />
-          Future of<br />
-          Web 3.0?
-        </h1>
-        <div class="para-btn">
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button>Read more</button>
+        <div class="section-brief">
+          <h1>
+            The Bright <br />
+            Future of Web<br />
+            3.0?
+          </h1>
+          <div>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </div>
         </div>
-        <div class="right-side">
+        <div class="side-info">
           <h1>New</h1>
           <div class="side-one">
             <h2><a href="#">Hydrogen VS Electric Cars</a></h2>
@@ -74,8 +79,9 @@
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
-            <hr />
+            <!-- <hr /> -->
           </div>
+          <hr />
           <div class="side-one">
             <h2><a href="#">Is VC Funding Drying Up?</a></h2>
             <p>
@@ -84,55 +90,53 @@
             </p>
           </div>
         </div>
+        <div class="news_cards">
+          <div class="feat">
+            <div class="image">
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="image not found"
+                height="150px"
+              />
+            </div>
+            <div class="intro">
+              <h2>01</h2>
+              <h3><a href="#">Reviving Retro PCs</a></h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="image">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="image not found"
+                height="150px"
+              />
+            </div>
+            <div class="intro">
+              <h2>02</h2>
+              <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="image">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="image not found"
+                height="150px"
+              />
+            </div>
+            <div class="intro">
+              <h2>03</h2>
+              <h3><a href="#">The Growth of Gaming</a></h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <div class="news_cards">
-      <div class="container">
-        <div class="feat">
-          <div class="image">
-            <img
-              src="./assets/images/image-retro-pcs.jpg"
-              alt="image not found"
-              height="150px"
-            />
-          </div>
-          <div class="intro">
-            <h2>01</h2>
-            <h3><a href="#">Reviving Retro PCs</a></h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-        <div class="feat">
-          <div class="image">
-            <img
-              src="./assets/images/image-top-laptops.jpg"
-              alt="image not found"
-              height="150px"
-            />
-          </div>
-          <div class="intro">
-            <h2>02</h2>
-            <h3><a href="#">Top 10 Laptops of 2022</a></h3>
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-        <div class="feat">
-          <div class="image">
-            <img
-              src="./assets/images/image-gaming-growth.jpg"
-              alt="image not found"
-              height="150px"
-            />
-          </div>
-          <div class="intro">
-            <h2>03</h2>
-            <h3><a href="#">The Growth of Gaming</a></h3>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script src="main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
